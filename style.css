@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pexels-robert-forever-ago-2517748.jpg);
+    background-position: center;
+    background-size:cover ;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(52, 111, 193);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+    width: 50;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+.hero-btn{
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid white;
+    background: rgb(52, 111, 193);
+    transition: 1s;
+}
+/*---places---*/
+.places{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: top 100px; ;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 2% ;
+    display:flex;
+    justify-content:space-between;
+    
+}
+.place-col{
+    flex-basis: 31%;
+    background: #40bb7f9c;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0,5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.place-col:hover{
+    box-shadow: 0 0 20px 0px rgba(48, 1, 1, 0.927);
+}
+/*---places---*/
+.place{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:50px ;
+}
+.place-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.place-col img{
+    width: 100%;
+    
+
+}
+.container {
+    background-image: linear-gradient(rgba(8, 164, 81, 0.989),rgb(1, 20, 57)),url(contact2.jpg);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d8d2d2;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #16064a;
+    border-radius: 4px;
+    resize: vertical;
+}
+.form-group button {
+    padding: 10px 20px;
+    background-color:rgb(6, 125, 55);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: rgb(0, 10, 8);
+}
+
+
+
